@@ -1,28 +1,16 @@
-Algoritmo ProgramaEvenODD
-	Imprimir "ingrese un número"
-	leer num1
-	Imprimir "ingrese segundo número"
-	leer num2
-	Imprimir "Suma (+) Resta (-) multiplicación (*) división (/) "
-	imprimir " ingrese operación con simbolo"
-	leer operacion
-	Imprimir " procesando"  num1 operacion num2 
-	si operacion == "+" Entonces
-		resultado = num1 + num2
-		fin si
-	si operacion == " -" Entonces
-			resultado = num1- num2
+Algoritmo specialNumber
+		Leer n
+		Si n == 100 Entonces
+			Imprimir 'This is a special number'
 		FinSi
-	si operacion == "*" Entonces
-			resultado = num1 * num2
-		FinSi
-	si operacion == "/" Entonces
-		resultado = num1 / num2
-	finsi 
-	si operacion == "+" | operacion == "-" | operacion == "*" | operacion == "/" Entonces
-		Escribir resultado
-	SiNo
-		escribir "Operación invalidad"
-	finsi 
 	
+		Si n % 10 == 0 Entonces
+			Imprimir 'This number is multiple of 10'
+		FinSi
+		si n < 1000 | n % 10 == 0 | n == 100 Entonces
+			Imprimir "This number is almost special"
+		SiNo
+			Imprimir "Just a regular number" 
+		FinSi
 FinAlgoritmo
+
