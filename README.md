@@ -40,7 +40,7 @@ Algoritmo OpcionMultiple
 			Imprimir " 3. Calcular longitud de un texto" 
 			Imprimir " Ingrese un texto"
 			leer texto
-			imprimir "resultado:" = ConvertirATexto(Longitud(texto))
+			imprimir "resultado:" ConvertirATexto(Longitud(texto))
 		De Otro Modo:
 			imprimir " Opcion es incorrecta"
 	Fin Segun
