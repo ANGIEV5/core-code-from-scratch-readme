@@ -1,12 +1,27 @@
-lgoritmo TablasConPara
-	Imprimir "Tablas de Multiplicar"
-	imprimir "Ingrese la tabla a calcular"
+Algoritmo NumAscendientesDes
+	Imprimir "Números ascendentes y descendentes" 
+	imprimir "Ingrese un número"
 	leer num1
-	Para I<-1 Hasta 10 Con Paso 1 Hacer
-		escribir num1 "* " I "=" num1*i
-		Fin Para
-	
+	Imprimir "1. Orden ascendente"
+	Imprimir "2. Orden descendente" 
+	leer opi
+	Segun opi Hacer
+		1:
+			Para i<- 0 Hasta num1 Con Paso 1 Hacer
+				escribir i 
+			Fin Para
+			
+		2:
+			Para i<-num1 Hasta 0 Con Paso -1 Hacer
+				Escribir i
+			Fin Para
+		
+		De Otro Modo:
+			escribir "Operacion no validad"
+	Fin Segun
 FinAlgoritmo
+
+
 
 
 
