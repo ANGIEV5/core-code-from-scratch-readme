@@ -1,14 +1,18 @@
-Algoritmo Fullname04
-		imprimir "Ingrese su nombre"
-		leer name
-		imprimir "Ingrese su apellido"
-		leer lastname
-		primeraLetra = Mayusculas(Subcadena(name ,0,0)) 
-		restodelnombre = Subcadena(name,1, Longitud(name) -1)
-		escribir primeraLetra + restodelnombre 
-		lastNamePrimeraletra = Mayusculas(subcadena(lastname ,0 ,0))
-		restoLastName = Subcadena(lastname, 1, Longitud(lastname) -1)
-		Escribir lastNamePrimeraletra + restoLastName
+Algoritmo Sales04
+	escribir "Escriba la cantidad de ventas" 
+	leer CantidadDeVentas
+	Escribir "totalDeVentas: " + ConvertirATexto(CantidadDeVentas)
+	Para contador<- 1 Hasta CantidadDeVentas Con Paso 1 Hacer
+		Escribir "ingresa la venta numero" + ConvertirATexto(contador) + ":" 
+		leer valorDeVenta 
+		totalDeVentas = totalDeVentas + valorDeVenta
+	Fin Para
+	promedio = totalDeVentas + CantidadDeVentas
+	Si CantidadDeVentas >= 5  Entonces
+		comision = totalDeVentas * 0.15 
+	SiNo
+		comision = totalDeVentas * 0.1
+	Fin Si
+	Escribir comision
 FinAlgoritmo
-
 
