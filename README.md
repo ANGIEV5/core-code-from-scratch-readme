@@ -15,5 +15,3 @@ Algoritmo Sales04
 	Fin Si
 	Escribir comision
 FinAlgoritmo
-
-nota: El código no funciona pero no se por que. 
