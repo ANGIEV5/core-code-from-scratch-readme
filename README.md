@@ -11,4 +11,4 @@ Algoritmo Totalprice2
 FinAlgoritmo
 
 
-nota: resulto con ayuda del profesor
+Nota: Resuelto con ayuda del profesor.
