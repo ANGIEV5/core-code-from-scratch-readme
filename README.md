@@ -1,35 +1,30 @@
-Funcion balance <- cashier ()
-	Definir balance Como Real;
-	balance = 1000;
-	Repetir
-		Imprimir "select an option:";
-		Imprimir "a. to deposit.";
-		Imprimir "b. withdraw.";
-		Imprimir "c. go out.";
-		leer option
-		Si option = 'a' Entonces
-			balance = balance + deposit()
-		FinSi
-		Si option = 'b' Entonces
-			balance = balance - withdraw()
-		FinSi
-	Mientras Que option = "a" | option = "b"
+Funcion celsius <- fahrenheitToCelsius (fahrenheit)
+	Definir celsius Como Real;
+	celsius = (fahrenheit - 32 ) / 1.8
 Fin Funcion
 
-Funcion value <- deposit()
-	Imprimir "how much do you want to deposit:";
-	leer value
-FinFuncion
-
-Funcion value <- withdraw()
-	Imprimir "how much do you want to withdraw:";
-	leer value
-FinFuncion
-
-Algoritmo exampleCashier
-	Imprimir cashier()
+Algoritmo exampleWeatherAverage
+	count = 0;
+	total = 0;
+	Repetir
+		Imprimir "select an option:";
+		Imprimir "a. enter degrees celsius.";
+		Imprimir "b. enter degrees fahrenheit.";
+		Imprimir "x. go out.";
+		leer option
+		Si option = "a" | option = "b" Entonces
+			leer degree
+			count = count + 1;
+		FinSi
+		Si option = 'a' Entonces
+			total = total + degree;
+		FinSi
+		Si option = 'b' Entonces
+			total = total + fahrenheitToCelsius(degree);
+		FinSi
+	Mientras Que option = "a" | option = "b"
+	Imprimir total / count;
 FinAlgoritmo
-
 
 
 Nota: Lo realice con la solution de guía
