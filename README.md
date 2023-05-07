@@ -1,23 +1,35 @@
-Funcion resultado <- sumofpairs (1, 100)
-	definir resultado Como Real
-	suma = 0
-	
+Funcion balance <- cashier ()
+	Definir balance Como Real;
+	balance = 1000;
 	Repetir
-		Escribir "Ingrese un número del 1 al 100"
-		leer num 
-		Si num <= 1 | num >= 100 Entonces
-			Escribir "operación invalida" 
-		
-			Si num % 2 = 0 Entonces
-				suma = suma + num 
-			Fin Si
-		Fin Si
-	Mientras Que num <= 1 | num >= 1 
-	resultado = suma
+		Imprimir "select an option:";
+		Imprimir "a. to deposit.";
+		Imprimir "b. withdraw.";
+		Imprimir "c. go out.";
+		leer option
+		Si option = 'a' Entonces
+			balance = balance + deposit()
+		FinSi
+		Si option = 'b' Entonces
+			balance = balance - withdraw()
+		FinSi
+	Mientras Que option = "a" | option = "b"
 Fin Funcion
 
-Algoritmo sumaPares
-	Imprimir sumofpairs(1,100)
+Funcion value <- deposit()
+	Imprimir "how much do you want to deposit:";
+	leer value
+FinFuncion
+
+Funcion value <- withdraw()
+	Imprimir "how much do you want to withdraw:";
+	leer value
+FinFuncion
+
+Algoritmo exampleCashier
+	Imprimir cashier()
 FinAlgoritmo
 
-Nota: No sale la suma al final y no entiendo por que.
+
+
+Nota: Lo realice con la solution de guía
