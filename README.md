@@ -1,6 +1,5 @@
-if (hour < 18) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
+do {text += "the number is " + i; 
+i++}
+while (i > 10);
+
 
