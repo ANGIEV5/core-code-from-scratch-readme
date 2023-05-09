@@ -1,1 +1,1 @@
-Core code from scratch readme
+let firstname= "Lata";
