@@ -1,5 +1,5 @@
-do {text += "the number is " + i; 
-i++}
-while (i > 10);
+for (let i = 0; i < 5; i+++) {
+    Text += "the number is " + i + " <br>" ;
+}
 
 
