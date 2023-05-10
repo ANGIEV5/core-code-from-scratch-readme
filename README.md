@@ -1,1 +1,3 @@
-Core code from scratch readme
+function hello () {
+return "Hello world!" 
+}
