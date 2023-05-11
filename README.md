@@ -1,1 +1,5 @@
-Core code from scratch readme
+function greet() {
+return 'Haydo!';
+ }
+
+let salutation = greet();
