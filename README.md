@@ -1,5 +1,6 @@
-function greet() {
-return 'Haydo!';
- }
-
-let salutation = greet();
+function a() {
+return 'Hello a!';
+}
+function b() {
+return 'Hello b!';
+}
