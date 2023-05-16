@@ -1,5 +1,3 @@
-function greet() {
-return 'Haydo!';
- }
-
-let salutation = greet();
+function greet (Ada){
+return 'Hello ' + Ada + '!';
+}
