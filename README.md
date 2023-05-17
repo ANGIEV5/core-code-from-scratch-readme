@@ -1,3 +1,3 @@
-function greet (Ada){
-return 'Hello ' + Ada + '!';
+function length(niza){
+return niza.length;
 }
