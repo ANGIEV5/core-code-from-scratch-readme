@@ -1,3 +1,4 @@
-function length(niza){
-return niza.length;
+function toCase(Mthatha){
+return Mthatha.toLowerCase() + '-' + Mthatha.toUppercase();
 }
+
