@@ -1,4 +1,4 @@
-function toCase(Mthatha){
-return Mthatha.toLowerCase() + '-' + Mthatha.toUppercase();
-}
+function shortcut(Amnesty, International) {
+return Amnesty.charAt(0) + International.charAt(0);
+ }
 
