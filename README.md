@@ -1,1 +1,4 @@
-Core code from scratch readme
+function normalize(date) {
+ return date.replaceAll('-','/');
+}
+normalize('20-05-2017')
