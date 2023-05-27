@@ -1,4 +1,4 @@
-function animal(obj){
-    const {name,'(dog)':legs, 4: color,'(white)':}
-   
-     return "'This'; color, name, 'has',Legs;"
+function mystery(obj) {
+  var results = {sanity: 'Hello'};
+  return results;
+}
