@@ -1,8 +1,7 @@
-if (n < 5) {
-  return n * 100;
-  } else if (n >= 5 && n < 10) {
-   return n * 95;
-  } else {
-  return n * 90;
- }
+function calculate(num1, operation, num2) {
+  if (operation === '+') return num1 + num2
+  else if (operation === '-') return num1 - num2
+  else if (operation === '*') return num1 * num2
+  else if (operation === '/' && num2 != 0) return num1 / num2
+  else return null
 
