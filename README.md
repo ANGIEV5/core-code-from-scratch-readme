@@ -1,7 +1,11 @@
-function calculate(num1, operation, num2) {
-  if (operation === '+') return num1 + num2
-  else if (operation === '-') return num1 - num2
-  else if (operation === '*') return num1 * num2
-  else if (operation === '/' && num2 != 0) return num1 / num2
-  else return null
+function warnTheSheep(queue) {
+  const wolfPosition = queue.indexOf('wolf');
+  if (wolfPosition == queue.length - 1)
+    return 'Pls go away and stop eating my sheep';
+  const sheepNumber = queue.length - (wolfPosition + 1);
+  return (
+    'Oi! Sheep number ' + sheepNumber + '! You are about to be eaten by a wolf!'
+  );
+}
 
+// lo resolvi con ayuda del resultado
