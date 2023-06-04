@@ -1,4 +1,3 @@
-function normalize(date) {
- return date.replaceAll('-','/');
-}
-normalize('20-05-2017')
+function animal(obj) {
+  return 'This ' + obj.color + ' ' + obj.name + ' has ' + obj.legs + ' legs.';
+  
