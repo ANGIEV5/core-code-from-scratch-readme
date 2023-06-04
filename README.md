@@ -1,9 +1,13 @@
-var countBits = function (n) {
-  let binaryNumber = n.toString(2);
-  let oneBitCount = 0;
-  for (let i = 0; i < binaryNumber.length; i++) {
-    if (binaryNumber[i] === '1') oneBitCount++;
+function order(words) {
+  let array = words.split(' ');
+  let sortedArray = [];
+  for (i = 0; i <= array.length; i++) {
+    for (j = 0; j < array.length; j++) {
+      if (array[j].indexOf(i) >= 0) {
+        sortedArray.push(array[j]);
+      }
+    }
   }
-  return oneBitCount;
-};
+  return sortedArray.join(' ');
+}
 // con ayuda del la resolución
