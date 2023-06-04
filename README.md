@@ -1,11 +1,8 @@
-function validParentheses(parens) {
-   let valid = 0;
-  for (let i = 0; i < parens.length; i++) {
-    if (parens[i] === ')') valid--;
-    if (parens[i] === '(') valid++;
-    if (valid < 0) return false;
-  }
-  return valid == 0;
-  
+function toCamelCase(str){
+ return str
+    .replace(/-/g, '_')
+    .split('_')
+    .map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word))
+    .join('');
 }
 // con ayuda del la resolución
