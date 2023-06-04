@@ -1,1 +1,3 @@
-Core code from scratch readme
+function echo(sound) {
+return sound;
+}
