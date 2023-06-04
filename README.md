@@ -1,4 +1,4 @@
-function firstWord(str) {
-  let firstBlank = str.indexOf(' ');
-  return str.substring(0, firstBlank)
+function normalize(date) {
+ return date.replaceAll('-','/');
 }
+normalize('20-05-2017')
