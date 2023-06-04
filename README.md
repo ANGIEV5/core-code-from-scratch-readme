@@ -1,3 +1,3 @@
-const stringToNumber = function(str){
-  return Number(str);
+function digitize(n) {
+  return String(n).split('').reverse().map(Number);
 }
