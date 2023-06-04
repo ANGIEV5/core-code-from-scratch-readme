@@ -1,11 +1,14 @@
-function warnTheSheep(queue) {
-  const wolfPosition = queue.indexOf('wolf');
-  if (wolfPosition == queue.length - 1)
-    return 'Pls go away and stop eating my sheep';
-  const sheepNumber = queue.length - (wolfPosition + 1);
-  return (
-    'Oi! Sheep number ' + sheepNumber + '! You are about to be eaten by a wolf!'
-  );
-}
+let phrase = [];
+  let words = morseCode.trim().split('   ');
+  let letters = [];
+  for (let i = 0; i < words.length; i++) {
+    letters = words[i].split(' ');
+    for (let j = 0; j < letters.length; j++) {
+      letters[j] = MORSE_CODE[letters[j]];
+    }
+    phrase.push(letters.join(''));
+  }
+  return phrase.join(' ').trim();
+};
 
 // lo resolvi con ayuda del resultado
