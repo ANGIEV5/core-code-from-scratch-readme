@@ -1,13 +1,12 @@
-function order(words) {
-  let array = words.split(' ');
-  let sortedArray = [];
-  for (i = 0; i <= array.length; i++) {
-    for (j = 0; j < array.length; j++) {
-      if (array[j].indexOf(i) >= 0) {
-        sortedArray.push(array[j]);
-      }
+function duplicateCount(text){
+ let duplicates = 0;
+  text = text.toLowerCase(); // todo minuscula
+  for (let i = 0; i < text.length; i++) {
+    if (text.indexOf(text[i]) !== text.lastIndexOf(text[i])) {
+      duplicates++;
+      text = text.replace(new RegExp(text[i], 'g'), '');
+      i = i - 1;
     }
   }
-  return sortedArray.join(' ');
-}
+  return duplicates;
 // con ayuda del la resolución
