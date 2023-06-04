@@ -1,12 +1,18 @@
-function duplicateCount(text){
- let duplicates = 0;
-  text = text.toLowerCase(); // todo minuscula
-  for (let i = 0; i < text.length; i++) {
-    if (text.indexOf(text[i]) !== text.lastIndexOf(text[i])) {
-      duplicates++;
-      text = text.replace(new RegExp(text[i], 'g'), '');
-      i = i - 1;
-    }
-  }
-  return duplicates;
+function encrypt(word) {
+  if (word.length === 1) return word.charCodeAt(0);
+  const charBackup = word[1];
+  word = word.replace(word[0], word.charCodeAt(0));
+  word = word.replace(charBackup, word[word.length - 1]);
+  word = word.replace(/\w$/, charBackup);
+  return word;
+}
+
+var encryptThis = function (text) {
+  const textArray = text.split(' ');
+  let result = '';
+  textArray.forEach((w) => {
+    result = result + ' ' + encrypt(w);
+  });
+  return result.trim();
+};
 // con ayuda del la resolución
